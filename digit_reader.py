@@ -20,6 +20,7 @@ def environ_read(eVar):
         eVar = int(eVar)
     else:
         eVar = 0 # Set to default
+    return eVar
 
 # Read Environment Vars safely
 dev = environ_read(os.environ.get('DEV'))
