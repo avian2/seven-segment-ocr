@@ -53,7 +53,7 @@ if __name__=="__main__":
     parser.add_argument('--video', help = "Input Video File")
     parser.add_argument('--output', help = "Output data file", default="out.csv")
     parser.add_argument('--config', help = "How to format the digit output file.", default="none")
-    parser.add_argument('--period', help = "Period (in seconds) to sample the video at", default=1)
+    parser.add_argument('--period', help = "Period (in seconds) to sample the video at", default=1, type=int)
 
     args = parser.parse_args()
     digitsReadArray = read_video_digits(args.video, args.period)
